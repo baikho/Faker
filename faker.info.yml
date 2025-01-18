@@ -2,5 +2,4 @@ name: Faker
 type: module
 description: Use the PHP Faker library to generate more meaningful sample content.
 package: Development
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9.3 || ^10

@@ -50,10 +50,10 @@ class FakerUserDevelGenerate extends UserDevelGenerate {
   /**
    * {@inheritdoc}
    */
-  public static function populateFields(EntityInterface $entity) {
+  public static function populateFields(EntityInterface $entity, array $skip = [], array $base = []) {
     // Do not proceed with default sample value population if Faker is checked.
     if (self::$faker !== TRUE) {
-      parent::populateFields($entity);
+      parent::populateFields($entity, $skip, $base);
     }
   }
 
